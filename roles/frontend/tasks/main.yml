@@ -1,7 +1,7 @@
 - name: Install nginx
   ansible.builtin.yum:
     name: nginx
-    state: present
+    state: installed
 
 - name: Clean old app directory
   ansible.builtin.file:
@@ -26,5 +26,6 @@
 
 - name: Start the nginx service
   ansible.builtin.systemd_service:
-    state: started
+    state: restarted
     name: nginx
+    enabled: true
