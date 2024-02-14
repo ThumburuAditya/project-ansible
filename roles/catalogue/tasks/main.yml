@@ -44,6 +44,5 @@
     name: mongodb-org-shell
     state: installed
 
-
 - name: Download Nodejs Dependencies
   ansible.builtin.shell: mongo --host 172.31.44.217 </app/schema/catalogue.js
