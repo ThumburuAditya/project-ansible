@@ -45,4 +45,4 @@
     state: installed
 
 - name: Download Nodejs Dependencies
-  ansible.builtin.shell: mongo --host 172.31.44.217 </app/schema/catalogue.js
+  ansible.builtin.shell: mongo --host 172.31.23.169 </app/schema/catalogue.js
