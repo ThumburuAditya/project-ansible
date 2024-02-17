@@ -1,3 +1,3 @@
 @Library('project') _
 
-deployment()
+pipeline()
