@@ -6,10 +6,6 @@ pipeline {
     }
   }
 
-  options {
-          ansiColor('xterm')
-      }
-
   parameters {
     string(name: 'ip_address', defaultValue: '', description: 'ipaddress of the component')
     string(name: 'component', defaultValue: '', description: 'enter the component name')
