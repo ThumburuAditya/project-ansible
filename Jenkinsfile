@@ -9,7 +9,7 @@ pipeline {
   parameters {
     string(name: 'ip_address', defaultValue: '', description: 'ipaddress of the component')
     string(name: 'component', defaultValue: '', description: 'enter the component name')
-    string(name: 'app_version', defaultValue: '', description: 'App Version to deploy')
+    //string(name: 'app_version', defaultValue: '', description: 'App Version to deploy')
   }
 
   stages {
