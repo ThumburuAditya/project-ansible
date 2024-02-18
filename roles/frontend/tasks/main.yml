@@ -20,7 +20,7 @@
 
 - name: Download and unzip the nodejs code
   ansible.builtin.unarchive:
-    src: https://roboshop-artifacts.s3.amazonaws.com/frontend.zip
+    src: http://172.31.14.209:8081/repository/frontend/frontend-1.0.0.zip
     dest: /usr/share/nginx/html
     remote_src: yes
 

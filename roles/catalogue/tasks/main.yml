@@ -14,14 +14,9 @@
 
 - name: Download and unzip the catalogue code
   ansible.builtin.unarchive:
-    src: https://roboshop-artifacts.s3.amazonaws.com/catalogue.zip
+    src: http://172.31.14.209:8081/repository/catalogue/catalogue-1.0.0.zip
     dest: /app
     remote_src: yes
-
-- name: Download Nodejs Dependencies
-  ansible.builtin.shell: npm install
-  args:
-    chdir: /app
 
 - name: Copy the catalogue service file
   ansible.builtin.template:
@@ -44,5 +39,5 @@
     name: mongodb-org-shell
     state: installed
 
-- name: Download Nodejs Dependencies
+- name: Load the Schema
   ansible.builtin.shell: mongo --host 172.31.23.169 </app/schema/catalogue.js
